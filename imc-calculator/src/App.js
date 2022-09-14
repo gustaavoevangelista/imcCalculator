@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './app.css' 
+import { useState } from "react"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default function App(){
+  return(
+    <div className='app'>
+      <h1>
+        IMC CALCULATOR
+      </h1>
+      <span>Let's calculate your IMC</span>
+
+      <div className='inputs'>
+        <input type="text" placeholder='weight (kg)' />
+          
+        <input type="text" placeholder='height (cm)'/>
+
+        <button >Calculate</button>
+      </div>
+
+      <h2>Result</h2>
     </div>
-  );
+  )
 }
-
-export default App;
